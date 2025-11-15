@@ -1,0 +1,96 @@
+
+        body {
+            margin: 0;
+            font-family: serif, arial;
+            background-color: #e5e5e5;
+            color: black;}
+
+        .heading {
+            background-color: #0086D8;
+            color: white;
+            text-align: center;
+            padding: 2em 0 1em 0;
+        }
+        .heading h1 {
+            margin: 0;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+        }
+        .heading p{
+            margin: 0.5em 0;
+            font-size: 1em;
+        }
+
+        ul.navbar {
+            position: relative;
+            width: 100%;
+            top: 0em;
+            left: 0em;
+            list-style: none;
+            margin: 0;
+            padding: 0.4em 0;
+            background-color: #051A32;
+            display: flex; /*display可以幫忙排版；flex把文字變成橫的對齊*/
+            justify-content: space-around; /*控制間隔平均分配*/
+            align-items: center;
+        }
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            padding: 0.4em 1em;
+        }
+        ul.navbar li a:hover{color: #4da3ff;}
+        ul.navbar li {position: relative;}
+
+        ul.dropdown-content {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;  
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 14em;
+            background-color: #4da3ff;
+            border-radius: 10px;
+        }
+        ul.navbar li.dropdown:hover ul.dropdown-content {
+            display: block;  /*display可以幫忙排版；block讓元素變成區塊*/
+        }
+        ul.dropdown-content li a{
+            display: block;  /*display可以幫忙排版*/
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+            background-color: #051A32;            
+        }
+
+        ul.dropdown-content li:hover a{
+            background-color: gray;
+            color: white;
+        }
+
+        .content {
+            background-color: #e5e5e5;
+            min-height: 300px;
+            padding: 2em 3em;
+            text-align: left;
+        }
+
+        @media all {
+            body {
+                font-size: 16px;
+            }
+        }
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            ul.navbar {
+                display: none;  /*display可以幫忙排版*/
+            }
+        }
