@@ -1,0 +1,159 @@
+
+        body {
+            background-color: #f2faf4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: serif, arial;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .main-container {
+            width: 1000px;
+            background-color: #f2faf4;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /*left panel*/
+        .left-panel {
+            width: 30%;
+            background-color: #7ea2a3;
+            diplay: flex;
+            flex-direction: column;
+
+        }
+
+        .photo-panel img {
+            width: 100%;
+            display: block;
+        }
+
+        .text-content {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-content h2 {
+            margin-bottom: 5px;
+        }
+        .text-content p {
+            margin: 0;
+        }
+        .text-content h4 {
+            border-bottom: 1.5px solid #4c6061;
+            margin-bottom: 10px;
+        }
+        .text-content img{
+            width: 90%;
+            display: block;
+            align-items: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+        /*right panel*/
+        .right-panel {
+            width: 70%;
+            background-color: #f2faf4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2.5px solid #ccc;
+            padding-bottom: 5px;
+        }
+            /*Education*/
+        .timeline {
+            display: flex;
+        }
+        .year {
+            font-weight: bold;
+            width: 100px;
+        }        
+        .description {
+            display: flex;
+        }
+
+            /*Skill*/
+        .tag {
+            display: inline-block;
+            padding: 5px 5px;
+            border-radius: 12px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            background-color: #c3f0b1;
+            color: #4f6348;
+        }
+
+            /*HW & Lab*/
+        .hw-lab-container {
+            display: flex;
+            gap: 14px;
+            border-radius: 12px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .hw-column, .lab-column {
+            display: flex;
+            padding: 10px;
+            border-radius: 12px;
+            background-color: #e9f2f2;
+            width: 100%;
+        }
+        .hw-column ul, .lab-column ul{
+            margin-top: 0;
+        }
+        .hw-column a, .lab-column a{
+            display: block;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #062e40;
+        }
+        .hw-column a:hover, .lab-column a:hover{
+            color: #77a1b5;
+        }
+
+            /*Favorite Music*/
+        .music-row {
+            display: flex;
+            gap: 15px;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .music-row a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        .music-row a img{
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover; /*避免圖片被壓扁變形*/
+            margin-bottom: 2.5px;
+        }
+        .music-title {
+            text-align: center;
+            font-size: 14px;
+            color: #0a0a0a;
+        }
+        .music-note {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px;
+        }
