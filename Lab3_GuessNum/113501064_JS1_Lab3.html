@@ -1,0 +1,56 @@
+</!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style = "background-color: lightcyan;">
+	<h1 style = "text-align: center;">113501064_Number Guessing Game</h1>
+
+    <div id="resultphoto" style = "text-align: center;"></div>
+
+	<script>
+		var answer = Math.floor(Math.random() * 100) + 1;
+		var chances = 7;
+
+		var min = 1;
+		var max = 100;
+		
+		while (chances > 0){
+			var input = window.prompt("請輸入 " + min + " 到 " + max + " 之間的整數。\n" +
+                "你還有 " + chances + " 次機會");
+
+			input = input.trim();
+
+			if (input === "" || isNaN(input)){
+				alert("請輸入有效範圍內的數字（不能超出 " + min + " 到 " + max + "  ）!");
+				continue;
+			}
+
+			var guess = Number(input);
+			if (guess < min || guess > max){
+				alert("請輸入有效範圍內的數字（不能超出 " + min + " 到 " + max + "  ）!");
+				continue;
+			}
+			if (guess === answer) {
+				alert("恭喜你答對了!正確答案是" + answer);
+				document.getElementById("resultphoto").innerHTML = '<img src = "correct.jpg" width = "500">'; /*用getElementById插入圖片*/
+				break;
+			}
+
+			if (guess > answer){
+				max = guess; 
+			}else if (guess < answer){
+				min = guess;
+			}
+
+			chances--;			
+		}
+
+		if (chances === 0){
+				alert("你答錯了!正確答案是" + answer);
+				document.getElementById("resultphoto").innerHTML = '<img src = "wrong.jpg" width = "500">';
+		}
+
+	</script>
+</body>
+</html>
