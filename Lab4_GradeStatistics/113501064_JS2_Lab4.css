@@ -1,0 +1,57 @@
+h1 {
+	 text-align: center;
+}
+
+#MathInput {
+	padding: 8px;
+	border-radius: 5px;
+	border: 0.5px solid;
+	border-color: #dad3e8;
+}
+
+#EnglishInput {
+	padding: 8px;
+	border-radius: 5px;
+	border: 0.5px solid;
+	border-color: #dad3e8;
+}
+
+#SubmitButton {
+	padding: 8px 10px;
+	font-size: 12px;
+	background-color: #dad3e8;
+	border-radius: 5px;
+	border-color: #dad3e8;
+	margin: 5px 0px 0px 0px;
+}
+
+#SubmitButton:hover {
+	background-color: #766f85;
+	color: #dad3e8;
+}
+
+form {
+	 text-align: center;
+}
+
+table {
+	  width: 600px; 
+	  margin: auto; 
+	  text-align: center;
+	  border-collapse: collapse;
+}
+
+table th, table td {
+	border: 0.8px solid dimgray;
+	padding: 8px 12px;
+}
+
+table th {
+	background-color: #766f85;
+	font-weight: bold;
+}
+
+tfoot td {
+	font-weight: bold;
+	background-color: slategray;
+}
