@@ -1,17 +1,17 @@
 		function add(a, b) {
-            return (a + b).toFixed(2);
+            return (a + b);
         }
 
         function substract(a, b){
-            return (a - b).toFixed(2);
+            return (a - b);
         }
 
         function multiply(a, b) {
-            return (a * b).toFixed(2);
+            return (a * b);
         }
 
         function divide(a, b) {
-            return (a / b).toFixed(2);
+            return (a / b);
         }
 
         function calculate() {
@@ -36,14 +36,15 @@
             }else if (operateway === "multiply") {
                 result = multiply(a, b);
             }else if (operateway === "divide") {
-                if (document.getElementById("Number2_Input").value === 0) {
+                if (b === 0) {
                     resultElement.innerText = "Result = Invalid Input";
+                    return;
                 }else {
                     result = divide(a, b);                    
                 }
             }
 
-            resultElement.innerText = "Result = " + result;
+            resultElement.innerText = "Result = " + result.toFixed(2);
             resultElement.classList.add("result_aftercalculate"); //這樣就可以切換到套用另一個id設定
         }
 
