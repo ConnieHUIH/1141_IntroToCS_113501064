@@ -37,7 +37,7 @@
                 result = multiply(a, b);
             }else if (operateway === "divide") {
                 if (b === 0) {
-                    resultElement.innerText = "Result = Invalid Input";
+                    resultElement.innerText = "Result = Invalid Input. Number2 cannot be 0 when dividing.";
                     return;
                 }else {
                     result = divide(a, b);                    
